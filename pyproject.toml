@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "factiva-fetcher"
+version = "0.1.0"
+description = ""
+authors = ["Takeru Eto <takeru0219@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+factiva-news = "^0.2.5"
+uvicorn = "^0.34.0"
+fastapi = "^0.115.10"
+dnastreaming = "^2.2.1"
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
+google-cloud-bigquery = "<3.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-mock = "^3.14.0"
+pytest-cov = "^6.0.0"
+black = "^25.1.0"
+isort = "^6.0.1"
+flake8 = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
